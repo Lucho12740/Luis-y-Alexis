@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor Musical Avanzado</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mi Reproductor VIP</h1>
+        
+        <div class="player-container">
+            <!-- Reproductor 1 -->
+            <div class="player-card" id="player1">
+                <div class="cover-container">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Portada 1" class="cover">
+                    <div class="overlay"></div>
+                </div>
+                <div class="player-info">
+                    <h3 class="song-title">Canción Inspiradora</h3>
+                    <p class="artist">Artista Principal</p>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress1"></div>
+                        <div class="time-display">
+                            <span id="current-time1">0:00</span>
+                            <span id="duration1">1:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="controls">
+                        <button class="control-btn" onclick="seekBackward('audio1')">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button class="control-btn play-btn" onclick="togglePlay('audio1')" id="play-btn1">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="control-btn" onclick="seekForward('audio1')">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+                <audio id="audio1" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+            </div>
+            
+            <!-- Reproductor 2 -->
+            <div class="player-card" id="player2">
+                <div class="cover-container">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Portada 2" class="cover">
+                    <div class="overlay"></div>
+                </div>
+                <div class="player-info">
+                    <h3 class="song-title">Melodía Relajante</h3>
+                    <p class="artist">Artista Secundario</p>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress2"></div>
+                        <div class="time-display">
+                            <span id="current-time2">0:00</span>
+                            <span id="duration2">2:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="controls">
+                        <button class="control-btn" onclick="seekBackward('audio2')">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button class="control-btn play-btn" onclick="togglePlay('audio2')" id="play-btn2">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="control-btn" onclick="seekForward('audio2')">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+                <audio id="audio2" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+            </div>
+            
+            <!-- Reproductor 3 -->
+            <div class="player-card" id="player3">
+                <div class="cover-container">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Portada 3" class="cover">
+                    <div class="overlay"></div>
+                </div>
+                <div class="player-info">
+                    <h3 class="song-title">Ritmo Energético</h3>
+                    <p class="artist">Banda Internacional</p>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress3"></div>
+                        <div class="time-display">
+                            <span id="current-time3">0:00</span>
+                            <span id="duration3">3:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="controls">
+                        <button class="control-btn" onclick="seekBackward('audio3')">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button class="control-btn play-btn" onclick="togglePlay('audio3')" id="play-btn3">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="control-btn" onclick="seekForward('audio3')">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+                <audio id="audio3" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
